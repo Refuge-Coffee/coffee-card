@@ -22,12 +22,14 @@ p {
   font-size: 1.3em;
 }
 
-.navigation {
+nav {
   .title {
-    font-size: 3.5em;
+    font-size: 3.2em;
     letter-spacing: 6px;
   }
 
   background: azure;
   border: 1px solid black;
 }
+
+@import 'coffee-card-search';

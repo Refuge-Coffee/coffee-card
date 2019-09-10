@@ -1,0 +1,40 @@
+.coffee-card {
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+
+  .card-content {
+    margin: 40px;
+
+    .search-input-wrapper {
+      border: 1px solid grey;
+      border-radius: 6px;
+      
+      .inputs {
+        margin: 10px;
+
+        input[type="text"] {
+          font-size: 1.5em;
+          display: inline-flex;
+          text-transform: uppercase;
+          border-style: none;
+         
+        }
+  
+        #first-four, #last-four {
+          width: 75px;
+        }
+  
+        #mid-three {
+          width: 50px;
+        }
+  
+        .card-dash {
+          display: inline-flex;
+          margin: 0px;
+          font-size: 1.7em;
+        }
+      }
+    }
+  }
+}
