@@ -2,6 +2,7 @@
   margin-top: 20px;
   border: 2px solid black;
   border-radius: 8px;
+  box-shadow: 10px 5px #888888;
 
   .card-content {
     margin: 40px;
@@ -14,27 +15,31 @@
         margin: 10px;
 
         input[type="text"] {
-          font-size: 1.5em;
+          font-size: 1.75em;
           display: inline-flex;
           text-transform: uppercase;
           border-style: none;
-         
+          letter-spacing: 6px;
+          width: 20%;
         }
   
-        #first-four, #last-four {
-          width: 75px;
-        }
+        // #first-four, #last-four {
+        //   width: 75px;
+        // }
   
-        #mid-three {
-          width: 50px;
-        }
+        // #mid-three {
+        //   width: 60px;
+        // }
   
         .card-dash {
           display: inline-flex;
-          margin: 0px;
-          font-size: 1.7em;
+          font-size: 1.75em;
         }
       }
     }
+  }
+
+  .card-info {
+    margin: 20px;
   }
 }
