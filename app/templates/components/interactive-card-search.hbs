@@ -1,22 +1,24 @@
 <div class="coffee-card">
   <div class="card-content columns">
-    <div class="column is-2"></div>
+    <div class="column is-2">
+      <div class="card-square"></div>
+    </div>
     <div class="search-input-wrapper column is-8">
       <div class="inputs">
-        <Input @id="first-four" @placeholder="XXXX" @maxlength="4"/>
+        <Input @id="first-four" @placeholder="XXXX" @maxlength="4" @value={{firstFour}}/>
         <div class="card-dash">-</div>
-        <Input @id="mid-three" @placeholder="XXX" @maxlength="3"/>
+        <Input @id="mid-three" @placeholder="XXX" @maxlength="3" @value={{midThree}} />
         <div class="card-dash">-</div>
-        <Input @id="last-four" @placeholder="XXXX" @maxlength="4"/>
+        <Input @id="last-four" @placeholder="XXXX" @maxlength="4" @value={{lastFour}} />
       </div>
     </div>
     <div class="column is-2"></div>
   </div>
   <div class="card-info columns">
     <div class="column is-8">
-      <h3>CARD HOLDER NAME</h3>
-      <h4>STATUS</h4>
-      <h4>$0.00</h4>
+      <h3>{{holderName}}</h3>
+      <h4>{{holderStatus}}</h4>
+      <h4>${{holderBalance}}</h4>
     </div>
     <div class="column is-4"></div>
   </div>

@@ -7,6 +7,12 @@
   .card-content {
     margin: 40px;
 
+    .card-square {
+      border: 1px solid black;
+      height: 100px;
+      width: 100px;
+    }
+
     .search-input-wrapper {
       border: 1px solid grey;
       border-radius: 6px;
