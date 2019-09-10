@@ -15,12 +15,12 @@
         margin: 10px;
 
         input[type="text"] {
-          font-size: 1.75em;
+          font-size: 2.75em;
           display: inline-flex;
           text-transform: uppercase;
           border-style: none;
           letter-spacing: 6px;
-          width: 20%;
+          width: 25%;
         }
   
         // #first-four, #last-four {
@@ -33,7 +33,9 @@
   
         .card-dash {
           display: inline-flex;
-          font-size: 1.75em;
+          font-size: 3.0em;
+          width: 10%;
+          text-align: center;
         }
       }
     }
