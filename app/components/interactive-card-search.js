@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import { computed } from '@ember/object';
+import { get, set } from '@ember/object';
 
 export default Component.extend({
 
@@ -15,9 +15,22 @@ export default Component.extend({
     this._super(...arguments);
   },
 
-  fullNumber: computed('firstFour', 'midThree', 'lastFour', function() {
-    return `${this.get('firstFour')}${this.get('midThree')}${this.get('lastFour')}`;
-  }),
-
+  actions: {
+    registerValue() {
+      let one, two, three;
+      one = get(this, 'firstFour.length');
+      two = get(this, 'midThree.length');
+      three = get(this, 'lastFour.length');
+      let combined = one + two + three;
+      console.log(combined);
+      if (combined === 10) {
+        this.setProperties({
+          holderName: "John Apple",
+          holderStatus: "Platinum",
+          holderBalance: "99.00"
+        });
+      }
+    }
+  }
 
 });
