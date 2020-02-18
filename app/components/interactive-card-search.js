@@ -15,6 +15,10 @@ export default Component.extend({
     this._super(...arguments);
   },
 
+  searchAPI: function() {
+
+  },
+
   actions: {
     registerValue() {
       let one, two, three;
