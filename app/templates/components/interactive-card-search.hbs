@@ -5,20 +5,20 @@
     </div>
     <div class="search-input-wrapper column is-8">
       <div class="inputs">
-        <Input @id="first-four" @placeholder="XXXX" @maxlength="4" @value={{this.firstFour}} @keyPress={{this.registerValue}}/>
+        <Input @id="first-four" @placeholder="XXXX" @maxlength="4" @value={{this.firstFour}} {{on 'change' (fn this.registerValue)}}/>
         <div class="card-dash">-</div>
-        <Input @id="mid-three" @placeholder="XXX" @maxlength="3" @value={{this.midThree}} @keyPress={{this.registerValue}}/>
+        <Input @id="mid-three" @placeholder="XXXX" @maxlength="4" @value={{this.midFour}} {{on 'change' (fn this.registerValue)}}/>
         <div class="card-dash">-</div>
-        <Input @id="last-four" @placeholder="XXXX" @maxlength="4" @value={{this.lastFour}} @keyPress={{this.registerValue}}/>
+        <Input @id="last-four" @placeholder="XXXX" @maxlength="4" @value={{this.lastFour}} {{on 'change' (fn this.registerValue)}}/>
       </div>
     </div>
     <div class="column is-2"></div>
   </div>
   <div class="card-info columns">
     <div class="column is-8">
-      <h3>{{holderName}}</h3>
-      <h4>{{holderStatus}}</h4>
-      <h4>${{holderBalance}}</h4>
+      <h3>{{this.holderName}}</h3>
+      <h4>{{this.holderStatus}}</h4>
+      <h4>${{this.holderBalance}}</h4>
     </div>
     <div class="column is-4"></div>
   </div>
